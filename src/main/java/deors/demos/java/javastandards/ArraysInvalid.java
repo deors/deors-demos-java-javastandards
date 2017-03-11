@@ -1,4 +1,4 @@
-package deors.demos.standards.java;
+package deors.demos.java.javastandards;
 
 /**
  * Class showing invalid array declarations according to coding standards.

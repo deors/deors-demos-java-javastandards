@@ -1,13 +1,13 @@
-package deors.demos.standards.java;
+package deors.demos.java.javastandards;
 
 /**
- * Class showing invalid brace positions according to coding standards.
+ * Class showing valid brace positions according to coding standards.
  *
  * @author jorge.hidalgo
  * @version 1.0
  */
-public class BracesInvalid
-{
+public class BracesValid {
+
     /**
      * String defined in constructor.
      */
@@ -21,8 +21,8 @@ public class BracesInvalid
     /**
      * Default constructor.
      */
-    public BracesInvalid()
-    {
+    public BracesValid() {
+
         String temp = "";
         temp = method1(temp);
         temp = method2(temp);
@@ -39,29 +39,26 @@ public class BracesInvalid
      *
      * @return the string after it is transformed
      */
-    private String method1(String retIn)
-    {
+    private String method1(String retIn) {
+
         String retOut = retIn;
-        for (int i = 0; i < LIMIT; i++)
-        {
-            if (i == 0)
-            {
+        for (int i = 0; i < LIMIT; i++) {
+            if (i == 0) {
                 retOut = retOut.concat("0");
             }
 
             if (i == 1) {
                 retOut = retOut.concat("1");
-            } else
-            {
-                retOut = retOut.concat("a"); }
-
-            if (i == 2)
-            {
-                retOut = retOut.concat("2");
+            } else {
+                retOut = retOut.concat("a");
             }
-            else {
+
+            if (i == 2) {
+                retOut = retOut.concat("2");
+            } else {
                 retOut = retOut.concat("b");
-            } }
+            }
+        }
         return retOut;
     }
 
@@ -73,24 +70,24 @@ public class BracesInvalid
      * @return the string after it is transformed
      */
     private String method2(String retIn) {
+
         String retOut = retIn;
         int j = 0;
-        do
-        {
+        do {
             retOut = retOut.concat("d");
         } while (j++ < LIMIT);
 
         j = 0;
         do {
             retOut = retOut.concat("e");
-        }
-        while (j++ < LIMIT);
+        } while (j++ < LIMIT);
 
         j = 0;
-        while (j++ < LIMIT)
-        {
-            retOut = retOut.concat("f"); }
-        return retOut; }
+        while (j++ < LIMIT) {
+            retOut = retOut.concat("f");
+        }
+        return retOut;
+    }
 
     /**
      * Method showing switch constructs.
@@ -100,9 +97,9 @@ public class BracesInvalid
      * @return the string after it is transformed
      */
     private String method3(String retIn) {
+
         String retOut = retIn;
-        switch (retOut.length())
-        {
+        switch (retOut.length()) {
             case 1:
                 retOut = retOut.concat("s");
                 break;
@@ -123,24 +120,21 @@ public class BracesInvalid
      * @return the string after it is transformed
      */
     private String method4(String retIn) {
-        String retOut = retIn;
-        try
-        {
-            retOut = retOut.concat("x");
-        }
-        catch (Exception e) {
-            e.printStackTrace(); }
 
-        try
-        {
-            retOut = retOut.concat("y"); }
-        catch (Exception e)
-        {
+        String retOut = retIn;
+        try {
+            retOut = retOut.concat("x");
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        finally
-        {
-            retOut = retOut.concat("z"); }
+
+        try {
+            retOut = retOut.concat("y");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            retOut = retOut.concat("z");
+        }
         return retOut;
     }
 }

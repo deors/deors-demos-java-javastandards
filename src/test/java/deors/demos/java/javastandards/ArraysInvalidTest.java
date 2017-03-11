@@ -1,4 +1,4 @@
-package deors.demos.standards.java;
+package deors.demos.java.javastandards;
 
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;

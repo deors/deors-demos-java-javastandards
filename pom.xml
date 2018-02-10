@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>deors.demos</groupId>
-    <artifactId>deors.demos.java.javastandards</artifactId>
+    <artifactId>deors-demos-java-javastandards</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>deors.demos.java.javastandards</name>
+    <name>deors-demos-java-javastandards</name>
+    <description>Examples of Java classes showing bad patterns for Java standards and conventions</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
